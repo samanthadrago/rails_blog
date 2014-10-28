@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="container row">
+    <header class="row brd-b bgc-prlt">
+      <nav class="fl-nd d-i pr-xl">
+        <ul class="lis-n">
+          <%= link_to root_path, :class => "td-n" do %>
+            <li class="d-ib">Home</li>
+            <% end %>
+          <li class="d-ib">About</li>
+          <li class="d-ib">Contact</li>
+        </ul>
+      </nav>
+      <h1 class="pt-md pl-xl h1-title">Sam Drago</h1>
+    </header>
+    <%= yield %>
+  </div>
 </body>
 </html>
